@@ -1,0 +1,14 @@
+.squares-container{
+    margin: 1rem;
+}
+.square{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    float: left;
+    height: 2rem;
+    margin: 0 0.5rem 0.5rem 0;
+    line-height: 2rem;
+    text-align: center;
+    width: 2rem;
+}
