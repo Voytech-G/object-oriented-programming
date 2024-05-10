@@ -19,6 +19,7 @@ const slider = new Slider(
   slides,
   ".slideshow-img",
   ".slideshow-title",
-  ".slideshow-dots",
+  ".slideshow-dot",
   2000
 );
+slider.startSlider();
