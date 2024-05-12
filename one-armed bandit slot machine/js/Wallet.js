@@ -18,9 +18,9 @@ class Wallet {
           throw new Error("invalid operator");
         }
       } else {
-        console.log(typeof value);
         throw new Error("invalid type provided");
       }
+      4;
     };
   }
 }

@@ -1,7 +1,7 @@
 class Draw {
   constructor() {
     this.options = ["red", "green", "blue"];
-    let _result = [];
+    let _result = this.drawResult();
     this.getDrawResult = () => _result;
   }
   drawResult() {

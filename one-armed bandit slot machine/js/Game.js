@@ -28,13 +28,13 @@ class Game {
     this.infopanelWallet.textContent = money;
     if (result) {
       result = `You've won ${wonMoney}$.`;
-    } else if (!result && result != "") {
+    } else if (!result && result !== "") {
       result = `You've lost ${bid}$.`;
     }
     this.scoreResult.textContent = result;
     this.scoreNumber.textContent = stats[0];
-    this.scoreWin.textNumber = stats[1];
-    this.scoreLoss.textNumber = stats[2];
+    this.scoreWin.textContent = stats[1];
+    this.scoreLoss.textContent = stats[2];
     this.playBid.value = "";
   }
   startGame() {
@@ -52,12 +52,19 @@ class Game {
     const wonMoney = Result.moneyWinInGame(win, bid);
     this.wallet.changeWallet(wonMoney, "+");
     this.stats.addGameStats(win, bid);
-
+    console.log(
+      colors,
+      this.wallet.getWalletValue(),
+      win,
+      this.stats.showGameStats(),
+      this.playBid.value,
+      wonMoney
+    );
     this.render(
       colors,
       this.wallet.getWalletValue(),
       win,
-      this.stats.showGameStats,
+      this.stats.showGameStats(),
       this.playBid.value,
       wonMoney
     );
